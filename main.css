@@ -1,0 +1,105 @@
+@keyframes kittens-loop {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 0% 100%;
+  }
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #e9cdce;
+}
+.main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table-divider {
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  background-color: #b95444;
+}
+.postcard {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  background-image: url("./assets/bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  background-position: bottom left;
+}
+.postcard-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.postcard-content-wrapper {
+  margin-top: auto;
+}
+.postcard-content {
+  width: 100%;
+  height: 200px;
+  background-image: url("./assets/mickey.png");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.postcard-kittens {
+  width: 64px;
+  height: 100%;
+  z-index: 1;
+  background-image: url("./assets/kitten-transparent.gif");
+  background-size: contain;
+  background-repeat: repeat-y;
+  animation: kittens-loop linear 12s infinite;
+}
+.postcard-hello-wrapper {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.anime-girl {
+  position: relative;
+  height: 50%;
+  width: 100%;
+  background-image: url("./assets/anime-girl.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+.sun-happy {
+  position: absolute;
+  left: 0;
+  top: -25%;
+  background-image: url("./assets/sun-happy.gif");
+  background-size: contain;
+  width: 50%;
+  aspect-ratio: 1;
+}
+.postcard-hello-text {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.postcard-hello-text img {
+  width: 100%;
+}
+.postcard-hang-out-text {
+  text-align: center;
+}
+.postcard-hang-out-text img {
+  width: 70%;
+}
